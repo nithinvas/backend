@@ -6,3 +6,19 @@ Screenshots of the deployed
 ![Screenshot (543)](https://github.com/nithinvas/backend/assets/40798917/ffa0f688-f9bc-4146-b1fb-b2adba9aa46d)
 
 ![Screenshot (544)](https://github.com/nithinvas/backend/assets/40798917/386e8d04-d7c7-4127-9be3-9086e4ee6eab)
+
+
+
+
+<strong>My database ER diagram</strong>
+![er_my](https://github.com/nithinvas/backend/assets/40798917/7677e566-5195-4aea-801e-07a6dd4c9df6)
+
+
+
+Tech stack used: Reactjs, Node js, Mysql
+Hosted in Vercel cloud
+
+
+website link-frontend:https://frontend-pi-six-99.vercel.app/
+
+
