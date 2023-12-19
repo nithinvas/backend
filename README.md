@@ -11,6 +11,8 @@ Screenshots of the deployed
 
 
 <strong><strong>My database ER diagram</strong></strong>
+
+
 ![er_my](https://github.com/nithinvas/backend/assets/40798917/7677e566-5195-4aea-801e-07a6dd4c9df6)
 
 
