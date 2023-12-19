@@ -35,9 +35,9 @@ for Backend Api's please check published postman Api documentation :https://docu
 
 
 <strong><strong><strong>Functionalities</strong></strong></strong>
-1)payment is done using completePayment function in completePayment.js
-2)Age restriction is set and it validates during payment 
-3)flexibilty of database is available
-4)Jwt Authentication is used and middlewares are written to check the authenticity of the user 
+1)payment is done using completePayment function in completePayment.js</br>
+2)Age restriction is set and it validates during payment </br>
+3)flexibilty of database is available</br>
+4)Jwt Authentication is used and middlewares are written to check the authenticity of the user </br>
 
 
