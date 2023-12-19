@@ -25,7 +25,9 @@ github link- frontend:https://github.com/nithinvas/frontend
 
 for Backend Api's please check published postman Api documentation :https://documenter.getpostman.com/view/17328570/2s9YkoeMPd
 
-This is the flow of the web application
+<strong><strong>This is the flow of the web application</strong></strong>
+
+
 <img width="356" alt="system_flow" src="https://github.com/nithinvas/backend/assets/40798917/477ff2b5-cea2-4683-b7ae-db87d15df9ee">
 
 
