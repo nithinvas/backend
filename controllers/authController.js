@@ -278,7 +278,6 @@ const getAllBatch = async (req, res) => {
 
 
 
-
 const checkEnrollment = async (req, res) => {
   try {
     // Check if the user has an existing payment for the current month
@@ -336,6 +335,58 @@ const checkEnrollment = async (req, res) => {
   }
 };
 
+// const userdata = async (req, res) => {
+//   try {
+//     const userId = req.user._id;
+
+//   } catch (error) {
+//     console.error('Error fetching batch details:', error);
+//     res.status(500).json({ error: 'Internal Server Error'});
+//   }
+// };
+const userdata = async (req, res) => {
+  try {
+    const userId = req.user._id;
+
+    // Fetch user data, enrollment data, and batch details from the database
+    const [userData] = await queryAsync('SELECT * FROM users WHERE UserID = ?', [userId]);
+    const [enrollmentData] = await queryAsync('SELECT BatchID FROM payment WHERE UserID = ? ORDER BY DateOfPayment DESC LIMIT 1', [userId]);
+
+    if (!userData || !enrollmentData) {
+      return res.status(404).json({ success: false, message: 'User not found or not enrolled' });
+    }
+
+    const enrolledBatchId = enrollmentData.BatchID;
+
+    // Fetch batch details including start time and end time
+    const [batchDetails] = await queryAsync('SELECT * FROM batch WHERE BatchID = ?', [enrolledBatchId]);
+
+    if (!batchDetails) {
+      return res.status(404).json({ success: false, message: 'Batch details not found' });
+    }
+
+    // Extract the relevant user information, enrolled batch details, start time, and end time
+    const { Name, Email, DateOfBirth } = userData;
+    const { StartTime, EndTime } = batchDetails;
+
+    // Return the user data, enrolled batch details, start time, and end time in the response
+    res.status(200).json({
+      success: true,
+      user: {
+        _id: userId,
+        name: Name,
+        email: Email,
+        dateOfBirth: DateOfBirth,
+        enrolledBatchId,
+        startTime: StartTime,
+        endTime: EndTime,
+      },
+    });
+  } catch (error) {
+    console.error('Error fetching user data:', error);
+    res.status(500).json({ success: false, message: 'Internal server error' });
+  }
+};
 
 
 module.exports = {
@@ -344,6 +395,7 @@ module.exports = {
   payment,
   getAllBatch,
   checkEnrollment,
+  userdata,
 };
 
 

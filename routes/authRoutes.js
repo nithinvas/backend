@@ -9,6 +9,7 @@ router.post('/register', authController.registerController);
 router.post('/payment',authMiddleware.requireSignIn,authController.payment);
 router.get('/getAllBatches',authController.getAllBatch);
 router.get('/checkEnrollment',authMiddleware.requireSignIn,authController.checkEnrollment);
+router.get('/getuserdata',authMiddleware.requireSignIn,authController.userdata);
 
 
 
