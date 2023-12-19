@@ -33,3 +33,11 @@ for Backend Api's please check published postman Api documentation :https://docu
 <img width="356" alt="system_flow" src="https://github.com/nithinvas/backend/assets/40798917/477ff2b5-cea2-4683-b7ae-db87d15df9ee">
 
 
+
+<strong><strong><strong>Functionalities</strong></strong></strong>
+1)payment is done using completePayment function in completePayment.js
+2)Age restriction is set and it validates during payment 
+3)flexibilty of database is available
+4)Jwt Authentication is used and middlewares are written to check the authenticity of the user 
+
+
