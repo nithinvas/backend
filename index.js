@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 // }));
 
 
-app.use(cors({origin: 'locahost', credentials: true}));
+app.use(cors({origin:true, credentials: true}));
 
 // Use your authentication routes
 app.use('/auth', authRoutes);
