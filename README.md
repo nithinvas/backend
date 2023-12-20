@@ -20,7 +20,7 @@
 Tech stack used: Reactjs, Node js, Mysql
 Hosted in Vercel cloud
 
-
+Backend is Deployed at: https://backend-psi-jet.vercel.app/
 website link-frontend:https://frontend-pi-six-99.vercel.app/
 
 github link- frontend:https://github.com/nithinvas/frontend
