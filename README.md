@@ -17,15 +17,16 @@
 
 
 
-Tech stack used: Reactjs, Node js, Mysql
-Hosted in Vercel cloud
+<strong><strong>Tech stack used: Reactjs, Node js, Mysql</strong></strong><br>
+Hosted in Vercel cloud (both frontend and backend)<br>
 
-Backend is Deployed at: https://backend-psi-jet.vercel.app/
-website link-frontend:https://frontend-pi-six-99.vercel.app/
+Backend is Deployed at: https://backend-psi-jet.vercel.app/ <br>
+Website link-frontend:https://frontend-pi-six-99.vercel.app/ <br>
 
-github link- frontend:https://github.com/nithinvas/frontend
+Github link- frontend:https://github.com/nithinvas/frontend <br>
 
-for Backend Api's please check published postman Api documentation :https://documenter.getpostman.com/view/17328570/2s9YkoeMPd
+For Backend Api's please check published postman Api documentation: <br>
+https://documenter.getpostman.com/view/17328570/2s9YkoeMPd
 
 <strong><strong>This is the flow of the web application</strong></strong>
 
