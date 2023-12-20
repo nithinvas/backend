@@ -32,7 +32,13 @@ for Backend Api's please check published postman Api documentation :https://docu
 
 <img width="356" alt="system_flow" src="https://github.com/nithinvas/backend/assets/40798917/477ff2b5-cea2-4683-b7ae-db87d15df9ee">
 
-
+<strong><strong><strong>API EndPoints</strong></strong></strong> <br> 
+router.post('/login', authController.loginController);<br> 
+router.post('/register', authController.registerController);<br> 
+router.post('/payment',authMiddleware.requireSignIn,authController.payment);<br> 
+router.get('/getAllBatches',authController.getAllBatch);<br> 
+router.get('/checkEnrollment',authMiddleware.requireSignIn,authController.checkEnrollment);<br> 
+router.get('/getuserdata',authMiddleware.requireSignIn,authController.userdata);<br> 
 
 <strong><strong><strong>Functionalities</strong></strong></strong> <br> 
 1)payment is done using completePayment function in completePayment.js <br> 
